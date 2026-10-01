@@ -15,6 +15,8 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.core.content.ContextCompat
 import com.example.voicesofheart.data.media.SongScanner
 import com.example.voicesofheart.domain.Song
+import androidx.compose.foundation.clickable
+import com.example.voicesofheart.data.player.PlayerManager
 
 @Composable
 fun LibraryScreen() {
@@ -58,7 +60,8 @@ fun LibraryScreen() {
         items(songs) { song ->
             ListItem(
                 headlineContent = { Text(song.title, style = MaterialTheme.typography.titleMedium) },
-                supportingContent = { Text(song.artist, style = MaterialTheme.typography.bodyMedium) }
+                supportingContent = { Text(song.artist, style = MaterialTheme.typography.bodyMedium)},
+                modifier = Modifier.clickable { PlayerManager.playSong(song, songs)}
             )
             HorizontalDivider()
         }

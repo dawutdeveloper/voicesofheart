@@ -53,4 +53,6 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.tooling)
     implementation(libs.navigation.compose)
     implementation(libs.material.icons.extended)
+    implementation(libs.media3.exoplayer)
+    implementation(libs.media3.session)
 }

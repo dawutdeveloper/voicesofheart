@@ -10,6 +10,8 @@ kotlin = "2.2.10"
 composeBom = "2026.02.01"
 
 [libraries]
+media3-exoplayer = { group = "androidx.media3", name = "media3-exoplayer", version = "1.4.1" }
+media3-session = { group = "androidx.media3", name = "media3-session", version = "1.4.1" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
